@@ -1,0 +1,26 @@
+//Write a program that takes an integer as input and returns an integer with reversed digit
+//ordering.
+
+
+public class Reverse{
+    public static void main(String[] args){
+        
+        int a = 500;
+        int b = -56;
+        int c = -90;
+        int d = 91;
+        System.out.println("the reverse of 500 is "+ reversenum(a));
+        System.out.println("the reverse of -56 is "+reversenum(b));
+        System.out.println("the reverse of -90 is "+reversenum(c));
+        System.out.println("the reverse of 91 is "+reversenum(d));
+    }
+    public static int reversenum(int n){
+     int ReversedNum = 0 ,mod;
+     while(n !=0){
+       mod = n%10;
+       ReversedNum = ReversedNum * 10+mod;
+       n/=10;
+     }
+     return ReversedNum;
+}
+}
