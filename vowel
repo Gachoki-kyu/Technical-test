@@ -1,0 +1,17 @@
+//Write a program that counts the number of vowels in a sentence.
+
+
+public class vowel{
+    public static void main(String[] args){
+        String vol = "hello world";
+        int vowels = 0;
+        for(int i = 0;i < vol.length();i++){
+            char ch = vol.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch =='o' || ch == 'u'){
+                ++vowels;
+            }
+            
+        }
+System.out.println(vowels);
+    }
+}
