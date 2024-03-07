@@ -1,0 +1,20 @@
+//Question 2: Fibonacci Sequence
+//Write a program to generate the Fibonacci sequence up to 100.
+
+public class Fibonacci{
+public static void main(String[] args){
+int fib1 = 0;
+int fib2 = 1;
+int fibonacci = 0;
+System.out.println("fibonacci of up to 100");
+System.out.println(fib1);
+System.out.println(fib2);
+while (fibonacci <= 100){
+fibonacci = fib1 + fib2;
+fib1 = fib2;
+fib2 = fibonacci;
+if(fibonacci <= 100){
+System.out.println(fibonacci);}
+}
+}
+}
