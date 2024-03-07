@@ -13,6 +13,6 @@ public class vowel{
             }
             
         }
-System.out.println(vowels);
+System.out.println(vol +" has "+vowels+" vowels");
     }
 }
