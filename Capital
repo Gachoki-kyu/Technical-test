@@ -1,0 +1,38 @@
+//Question 4: Capitalize Words
+//Write a program that accepts a string as input, capitalizes the first letter of each word in the
+//string, and then returns the result string.
+//Example:
+//"i love programming"=> returns "I Love Programming"
+
+
+
+class Capital {
+    public static String toCapital(String message){
+        
+        boolean space = true;
+        char[] Arr = message.toCharArray();
+        for(int i = 0;i <Arr.length;i++ ){
+            if(Character.isLetter(Arr[i])){
+                if(space){
+                    Arr[i] = Character.toUpperCase(Arr[i]);
+                    space = false;
+                }
+            }
+            else{
+                space = true;
+            }
+        }
+        message = String.valueOf(Arr);
+        return message;
+    } 
+    public static void main(String[] args) {
+        Capital obj = new Capital();
+        String hi = "hi";
+         String mes2 = "i love programming";
+        String mes1 = obj.toCapital(mes2);
+       
+        System.out.println(mes1);
+        System.out.println(obj.toCapital(hi));
+        
+    }
+}
